@@ -4,7 +4,7 @@ export default defineConfig({
   input: "./src/index.ts",
   output: {
     dir: "dist",
-    format: "es",
+    format: "esm",
     name: "react-buttons",
   },
   external: ["react", "react-dom"],
