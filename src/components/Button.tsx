@@ -1,16 +1,18 @@
-import * as React from 'react'
-import { ReactNode } from 'react'
-type PropsType={
-    children:ReactNode
+import * as React from "react";
+import { ReactNode, HTMLProps } from "react";
 
-}
+interface ButtonProps extends HTMLProps<HTMLButtonElement> {}
 
-const Button = ({children}:PropsType) => {
-  return (
-    <button>
-        {children}
-    </button>
-  )
-}
+type PropsType = {
+  children: ReactNode;
+  variant?: "primary" | "secondary";
+  size?: "xl" | "lg" | "md" | "sm" | "xs";
+  disabled?: boolean;
+  props: ButtonProps;
+};
 
-export {Button}
+const Button = ({ children, ...props }: PropsType) => {
+  return <button {...props}>{children}</button>;
+};
+
+export { Button };

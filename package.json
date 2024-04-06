@@ -1,10 +1,10 @@
 {
   "name": "ms-react-buttons",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "type": "module",
   "description": "React Buttons Library is a collection of customizable button components for React applications.",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "npx rollup -c"
   },
